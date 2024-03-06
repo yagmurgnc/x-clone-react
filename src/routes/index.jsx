@@ -3,6 +3,9 @@ import Home from "~/pages/home";
 import Explore from "~/pages/explore";
 import Notifications from "~/pages/notifications";
 import MainLayout from "~/layouts/main";
+import Messages from "~/pages/messages";
+import Lists from "~/pages/lists";
+import Profile from "~/pages/profile";
 
 const routes = createBrowserRouter([
   {
@@ -21,6 +24,21 @@ const routes = createBrowserRouter([
       {
         path: "/notifications",
         element: <Notifications />,
+      },
+
+      {
+        path: "/messages",
+        element: <Messages />,
+      },
+
+      {
+        path: "/lists",
+        element: <Lists />,
+      },
+
+      {
+        path: "/profile",
+        element: <Profile />,
       },
     ],
   },
